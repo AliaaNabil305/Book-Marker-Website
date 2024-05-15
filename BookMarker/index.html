@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" > 
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <title>BookMarker</title>
+</head>
+<body>
+    <div class="container">
+        <section class="title">
+            <h1 class="my-5">Bookmarker</h1>
+            <div class="line"></div>
+        </section>
+        <section class="content bg-grey p-5 mt-3 m-auto text-center mb-4">
+            <h3 class="mb-4 fw-bold">Book you favourite site</h3>
+            <div class="site mb-3">
+                <p class="fw-bold">Site Name</p>
+                <input type="text" class="form-control w-75 m-auto" placeholder="Bookmark Name" id="name">
+                <p id="bookMarkText" class="form-control w-75 bg-red m-auto my-3"></p>
+            </div>
+
+            <div class="site mb-4">
+                <p class="fw-bold">Site URL</p>
+                <input type="text" class="form-control w-75 m-auto" placeholder="Website URL" id="url">
+                <p id="bookMarkUrl" class="form-control w-75 bg-red m-auto my-3"></p>
+            </div>
+
+            <button onclick="addBookmark()" class="btn btn-primary btn-lg px-4" id="addBtn">submit</button>
+        </section>
+        <section class="mb-3" id="addedSites">
+         
+        </section>
+        
+
+    </div>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
